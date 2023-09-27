@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      .bottom-section {
+            display: flex;
+            justify-content: space-between; /* Horizontal spacing between sections */
+            background-color: white; /* Choose your desired color */
+            padding: 20px;
+            color: white; /* Text color for sections */
+        }
+        .contact-me-section{
+            background-color: red;
+        }
+        .about-me-section{
+            background-color: green;
+        }
+        .contact-me-section,
+        .about-me-section {
+            flex-basis: 48%; /* Adjust for desired spacing between sections */
+            
+        }
+
+        /* Additional styling for Contact Me and About Me sections */
+        .contact-me-section h2,
+        .about-me-section h2 {
+            font-size: 24px;
+        }
+
+
+
+    </style>
+  </head>
+  <body>
+    
+    <section class="bottom-section">
+        <!-- Contact Me Section -->
+        <div class="contact-me-section">
+            <h2>Contact Me</h2>
+            <p>
+                Feel free to reach out to me at:
+                <a href="mailto:your.email@example.com">your.email@example.com</a>
+            </p>
+        </div>
+
+        <!-- About Me Section -->
+        <div class="about-me-section">
+            <h2>About Me</h2>
+            <p>
+                I'm a passionate Full Stack Developer with expertise in web development technologies.
+                Here's a brief introduction about me and my journey as a developer.
+            </p>
+        </div>
+    </section>
+    
+      
+  </body>
+</html>

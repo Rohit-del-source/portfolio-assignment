@@ -1,0 +1,151 @@
+/* Reset default margin and padding */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* Create the hero section with a background image */
+.hero {
+    background-image: url('backgroung_image.jpg'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Adjust the height as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Style the hero content (name and occupation) */
+.hero-content {
+    font-weight: 400;
+    padding: 20px;
+    font-family: 'Lato', sans-serif;
+    color: #fff; /* Text color */
+}
+
+.name {
+    font-size: 70px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+.occupation {
+    font-size: 100px;
+}
+
+
+.black-box-section {
+    background-color: #000; /* Change to your desired background color */
+    text-align: center;
+    padding: 50px 0;
+}
+
+.black-box-content {
+    font-size: 80px;
+    font-weight: 400;
+    color: #fff; /* Change to your desired text color */
+}
+
+.black-box-content span {
+    font-size: 96px;
+    color: white;
+}
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 90px;
+    
+
+}
+    .content-section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+    }
+    .content-section .card{
+        flex: 1;
+        margin: 20px 20px;
+        box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+
+    }
+    .content-section .card img {
+        width: 90%;
+        height: auto;
+    }
+    .content-section .card h3 {
+        margin: 15px 0px;
+        font-size: 28px;
+        color: #1662a1;
+        font-family: 'Lato', sans-serif;
+
+    }
+    .content-section .card p{
+        font-size: 16px;
+        line-height: 1.5;
+        padding: 0px 10px;
+        margin-bottom: 20px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        
+    }
+
+    .bottom-section {
+        display: flex;
+        justify-content: space-between; /* Horizontal spacing between sections */
+        background-color: white; /* Choose your desired color */
+        padding: 20px;
+        color: white; /* Text color for sections */
+    }
+    .contact-me-section{
+        background-color: red;
+    }
+    .about-me-section{
+        background-color: green;
+    }
+    .contact-me-section,
+    .about-me-section {
+        flex-basis: 48%; /* Adjust for desired spacing between sections */
+        
+    }
+
+    /* Additional styling for Contact Me and About Me sections */
+    .contact-me-section h2,
+    .about-me-section h2 {
+        font-size: 34px;
+    }
+    .contact-me-section p,
+    .about-me-section p {
+        font-size: 18px;
+    }
+
+    @media (max-width: 786px) {
+        /* Hero Section Styles for smaller screens */
+        .hero-section {
+            min-height: 50vh;
+        }
+    
+        /* Black Box Section Styles for smaller screens */
+        .black-box-section {
+            font-size: 24px;
+        }
+    
+        /* Bottom Section Styles for smaller screens */
+        .bottom-section {
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        /* Additional responsive styles can be added here */
+    }
